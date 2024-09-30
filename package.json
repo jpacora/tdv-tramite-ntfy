@@ -1,5 +1,5 @@
 {
-  "name": "tdv",
+  "name": "tdv-tramite-ntfy",
   "version": "1.0.0",
   "main": "libs/Automator.js",
   "bin": {
