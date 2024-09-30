@@ -1,6 +1,6 @@
 {
   "name": "tdv-tramite-ntfy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "libs/Automator.js",
   "bin": {
     "tdv-tramite-ntfy": "./bin/automator"

@@ -16,7 +16,7 @@ Este proyecto utiliza Puppeteer para automatizar el proceso de inicio de sesión
 - **Node.js**: Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema.
 - **Puppeteer**: Este proyecto utiliza Puppeteer, que se instalará automáticamente con las dependencias.
 
-## Instalación
+## Instalación manual y uso como librería
 
 1. Clona el repositorio:
 
@@ -30,18 +30,26 @@ Este proyecto utiliza Puppeteer para automatizar el proceso de inicio de sesión
    ```bash
    npm install
    ```
+## Instalación
 
-3. Configura tus credenciales como variables de entorno:
+1. Instala la herramienta:
+
+   ```bash
+   npm install -g tdv-tramite-ntfy
+   ```
+
+2. Configura tus credenciales como variables de entorno:
    - CODIGO: Código universitario
    - PASSWORD: Contraseña
    - ID_TRAMITE: Identificador del trámite que deseas verificar
    - TOPIC: Tópico de ntfy donde se enviará el resultado (tdv_upt)
+
 ## Uso
 
-Para ejecutar la automatización, simplemente ejecuta`:
+Para ejecutar la automatización, simplemente configura las variables de entorno necesarias y luego ejecuta:
 
 ```bash
-./bin/automator
+tdv-tramite-ntfy
 ```
 
 
