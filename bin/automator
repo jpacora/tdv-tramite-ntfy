@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const Automator = require('../libs/Automator');
+
+const ALUM_CODIGO = process.env.CODIGO || "2013000725";
+const ALUM_PASSWORD = process.env.PASSWORD || "000000";
+const ID_TRAMITE = process.env.ID_TRAMITE || "112824";
+
+// Uso de la clase
+(async () => {
+    const automator = new Automator(ALUM_CODIGO, ALUM_PASSWORD, ID_TRAMITE);
+    await automator.init();
+    await automator.login();
+    await automator.enviarNotificacion();
+})();
